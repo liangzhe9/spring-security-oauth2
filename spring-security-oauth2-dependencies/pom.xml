@@ -11,6 +11,7 @@
     <properties>
         <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
         <spring-boot-mapper.version>2.1.5</spring-boot-mapper.version>
+        <spring-security.version>2.3.3.RELEASE</spring-security.version>
     </properties>
 
     <dependencyManagement>
@@ -27,6 +28,13 @@
                 <groupId>tk.mybatis</groupId>
                 <artifactId>mapper-spring-boot-starter</artifactId>
                 <version>${spring-boot-mapper.version}</version>
+            </dependency>
+
+            <!-- Spring Security -->
+            <dependency>
+                <groupId>org.springframework.security.oauth</groupId>
+                <artifactId>spring-security-oauth2</artifactId>
+                <version>${spring-security.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
